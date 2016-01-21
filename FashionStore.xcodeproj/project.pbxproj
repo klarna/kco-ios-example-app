@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1300AB9B83346188659F40FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA34C5F9951518D24185102 /* libPods.a */; };
+		DD69EB241C4F903A0087F7CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB231C4F903A0087F7CF /* main.m */; };
+		DD69EB271C4F903A0087F7CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB261C4F903A0087F7CF /* AppDelegate.m */; };
+		DD69EB2A1C4F903A0087F7CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB291C4F903A0087F7CF /* ViewController.m */; };
+		DD69EB2D1C4F903A0087F7CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD69EB2B1C4F903A0087F7CF /* Main.storyboard */; };
+		DD69EB2F1C4F903A0087F7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69EB2E1C4F903A0087F7CF /* Assets.xcassets */; };
+		DD69EB321C4F903A0087F7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD69EB301C4F903A0087F7CF /* LaunchScreen.storyboard */; };
+		DD69EB3D1C4F903A0087F7CF /* FashionStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB3C1C4F903A0087F7CF /* FashionStoreTests.m */; };
+		DD69EB481C4F903A0087F7CF /* FashionStoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB471C4F903A0087F7CF /* FashionStoreUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD69EB391C4F903A0087F7CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD69EB171C4F903A0087F7CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD69EB1E1C4F903A0087F7CF;
+			remoteInfo = FashionStore;
+		};
+		DD69EB441C4F903A0087F7CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD69EB171C4F903A0087F7CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD69EB1E1C4F903A0087F7CF;
+			remoteInfo = FashionStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29E9803CC759C3B3690B2EEF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9B034F35C5E5D88296DA164D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9FA34C5F9951518D24185102 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD69EB1F1C4F903A0087F7CF /* FashionStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD69EB231C4F903A0087F7CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD69EB251C4F903A0087F7CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD69EB261C4F903A0087F7CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD69EB281C4F903A0087F7CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD69EB291C4F903A0087F7CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD69EB2C1C4F903A0087F7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD69EB2E1C4F903A0087F7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD69EB311C4F903A0087F7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD69EB331C4F903A0087F7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD69EB381C4F903A0087F7CF /* FashionStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD69EB3C1C4F903A0087F7CF /* FashionStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FashionStoreTests.m; sourceTree = "<group>"; };
+		DD69EB3E1C4F903A0087F7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD69EB431C4F903A0087F7CF /* FashionStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD69EB471C4F903A0087F7CF /* FashionStoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FashionStoreUITests.m; sourceTree = "<group>"; };
+		DD69EB491C4F903A0087F7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD69EB1C1C4F903A0087F7CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1300AB9B83346188659F40FF /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD69EB351C4F903A0087F7CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD69EB401C4F903A0087F7CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1796604AD03B63C420E3C5F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B034F35C5E5D88296DA164D /* Pods.debug.xcconfig */,
+				29E9803CC759C3B3690B2EEF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A60A94F0D4D22FAD399578C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA34C5F9951518D24185102 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD69EB161C4F903A0087F7CF = {
+			isa = PBXGroup;
+			children = (
+				DD69EB211C4F903A0087F7CF /* FashionStore */,
+				DD69EB3B1C4F903A0087F7CF /* FashionStoreTests */,
+				DD69EB461C4F903A0087F7CF /* FashionStoreUITests */,
+				DD69EB201C4F903A0087F7CF /* Products */,
+				1796604AD03B63C420E3C5F4 /* Pods */,
+				A60A94F0D4D22FAD399578C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD69EB201C4F903A0087F7CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD69EB1F1C4F903A0087F7CF /* FashionStore.app */,
+				DD69EB381C4F903A0087F7CF /* FashionStoreTests.xctest */,
+				DD69EB431C4F903A0087F7CF /* FashionStoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD69EB211C4F903A0087F7CF /* FashionStore */ = {
+			isa = PBXGroup;
+			children = (
+				DD69EB251C4F903A0087F7CF /* AppDelegate.h */,
+				DD69EB261C4F903A0087F7CF /* AppDelegate.m */,
+				DD69EB281C4F903A0087F7CF /* ViewController.h */,
+				DD69EB291C4F903A0087F7CF /* ViewController.m */,
+				DD69EB2B1C4F903A0087F7CF /* Main.storyboard */,
+				DD69EB2E1C4F903A0087F7CF /* Assets.xcassets */,
+				DD69EB301C4F903A0087F7CF /* LaunchScreen.storyboard */,
+				DD69EB331C4F903A0087F7CF /* Info.plist */,
+				DD69EB221C4F903A0087F7CF /* Supporting Files */,
+			);
+			path = FashionStore;
+			sourceTree = "<group>";
+		};
+		DD69EB221C4F903A0087F7CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD69EB231C4F903A0087F7CF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD69EB3B1C4F903A0087F7CF /* FashionStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD69EB3C1C4F903A0087F7CF /* FashionStoreTests.m */,
+				DD69EB3E1C4F903A0087F7CF /* Info.plist */,
+			);
+			path = FashionStoreTests;
+			sourceTree = "<group>";
+		};
+		DD69EB461C4F903A0087F7CF /* FashionStoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD69EB471C4F903A0087F7CF /* FashionStoreUITests.m */,
+				DD69EB491C4F903A0087F7CF /* Info.plist */,
+			);
+			path = FashionStoreUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD69EB1E1C4F903A0087F7CF /* FashionStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD69EB4C1C4F903A0087F7CF /* Build configuration list for PBXNativeTarget "FashionStore" */;
+			buildPhases = (
+				C98EE1ADBFB12B04FEC7AB35 /* Check Pods Manifest.lock */,
+				DD69EB1B1C4F903A0087F7CF /* Sources */,
+				DD69EB1C1C4F903A0087F7CF /* Frameworks */,
+				DD69EB1D1C4F903A0087F7CF /* Resources */,
+				BB39216967B5C4EA5CBCE823 /* Embed Pods Frameworks */,
+				32F37CC8A48C022B39B28F0A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FashionStore;
+			productName = FashionStore;
+			productReference = DD69EB1F1C4F903A0087F7CF /* FashionStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD69EB371C4F903A0087F7CF /* FashionStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD69EB4F1C4F903A0087F7CF /* Build configuration list for PBXNativeTarget "FashionStoreTests" */;
+			buildPhases = (
+				DD69EB341C4F903A0087F7CF /* Sources */,
+				DD69EB351C4F903A0087F7CF /* Frameworks */,
+				DD69EB361C4F903A0087F7CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD69EB3A1C4F903A0087F7CF /* PBXTargetDependency */,
+			);
+			name = FashionStoreTests;
+			productName = FashionStoreTests;
+			productReference = DD69EB381C4F903A0087F7CF /* FashionStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD69EB421C4F903A0087F7CF /* FashionStoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD69EB521C4F903A0087F7CF /* Build configuration list for PBXNativeTarget "FashionStoreUITests" */;
+			buildPhases = (
+				DD69EB3F1C4F903A0087F7CF /* Sources */,
+				DD69EB401C4F903A0087F7CF /* Frameworks */,
+				DD69EB411C4F903A0087F7CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD69EB451C4F903A0087F7CF /* PBXTargetDependency */,
+			);
+			name = FashionStoreUITests;
+			productName = FashionStoreUITests;
+			productReference = DD69EB431C4F903A0087F7CF /* FashionStoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD69EB171C4F903A0087F7CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Klarna;
+				TargetAttributes = {
+					DD69EB1E1C4F903A0087F7CF = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = UEGP57UW3K;
+					};
+					DD69EB371C4F903A0087F7CF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DD69EB1E1C4F903A0087F7CF;
+					};
+					DD69EB421C4F903A0087F7CF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DD69EB1E1C4F903A0087F7CF;
+					};
+				};
+			};
+			buildConfigurationList = DD69EB1A1C4F903A0087F7CF /* Build configuration list for PBXProject "FashionStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD69EB161C4F903A0087F7CF;
+			productRefGroup = DD69EB201C4F903A0087F7CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD69EB1E1C4F903A0087F7CF /* FashionStore */,
+				DD69EB371C4F903A0087F7CF /* FashionStoreTests */,
+				DD69EB421C4F903A0087F7CF /* FashionStoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD69EB1D1C4F903A0087F7CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD69EB321C4F903A0087F7CF /* LaunchScreen.storyboard in Resources */,
+				DD69EB2F1C4F903A0087F7CF /* Assets.xcassets in Resources */,
+				DD69EB2D1C4F903A0087F7CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD69EB361C4F903A0087F7CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD69EB411C4F903A0087F7CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32F37CC8A48C022B39B28F0A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB39216967B5C4EA5CBCE823 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98EE1ADBFB12B04FEC7AB35 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD69EB1B1C4F903A0087F7CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD69EB2A1C4F903A0087F7CF /* ViewController.m in Sources */,
+				DD69EB271C4F903A0087F7CF /* AppDelegate.m in Sources */,
+				DD69EB241C4F903A0087F7CF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD69EB341C4F903A0087F7CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD69EB3D1C4F903A0087F7CF /* FashionStoreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD69EB3F1C4F903A0087F7CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD69EB481C4F903A0087F7CF /* FashionStoreUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD69EB3A1C4F903A0087F7CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD69EB1E1C4F903A0087F7CF /* FashionStore */;
+			targetProxy = DD69EB391C4F903A0087F7CF /* PBXContainerItemProxy */;
+		};
+		DD69EB451C4F903A0087F7CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD69EB1E1C4F903A0087F7CF /* FashionStore */;
+			targetProxy = DD69EB441C4F903A0087F7CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD69EB2B1C4F903A0087F7CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD69EB2C1C4F903A0087F7CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD69EB301C4F903A0087F7CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD69EB311C4F903A0087F7CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD69EB4A1C4F903A0087F7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a4f57c50-8bca-48a9-a4e4-fe03857b6dab";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD69EB4B1C4F903A0087F7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Klarna AB (UEGP57UW3K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Klarna AB (UEGP57UW3K)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a4f57c50-8bca-48a9-a4e4-fe03857b6dab";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD69EB4D1C4F903A0087F7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B034F35C5E5D88296DA164D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FashionStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.sdk.fashionstore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD69EB4E1C4F903A0087F7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E9803CC759C3B3690B2EEF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FashionStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.sdk.fashionstore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD69EB501C4F903A0087F7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FashionStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.FashionStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionStore.app/FashionStore";
+			};
+			name = Debug;
+		};
+		DD69EB511C4F903A0087F7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FashionStoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.FashionStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FashionStore.app/FashionStore";
+			};
+			name = Release;
+		};
+		DD69EB531C4F903A0087F7CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FashionStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.FashionStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FashionStore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DD69EB541C4F903A0087F7CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FashionStoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.FashionStoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FashionStore;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD69EB1A1C4F903A0087F7CF /* Build configuration list for PBXProject "FashionStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD69EB4A1C4F903A0087F7CF /* Debug */,
+				DD69EB4B1C4F903A0087F7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD69EB4C1C4F903A0087F7CF /* Build configuration list for PBXNativeTarget "FashionStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD69EB4D1C4F903A0087F7CF /* Debug */,
+				DD69EB4E1C4F903A0087F7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD69EB4F1C4F903A0087F7CF /* Build configuration list for PBXNativeTarget "FashionStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD69EB501C4F903A0087F7CF /* Debug */,
+				DD69EB511C4F903A0087F7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD69EB521C4F903A0087F7CF /* Build configuration list for PBXNativeTarget "FashionStoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD69EB531C4F903A0087F7CF /* Debug */,
+				DD69EB541C4F903A0087F7CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD69EB171C4F903A0087F7CF /* Project object */;
+}
