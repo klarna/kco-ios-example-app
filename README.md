@@ -12,6 +12,16 @@ pod 'iOSKlarnaCheckoutSDK', :path => 'iOSKlarnaCheckoutSDK-0.1.6/'
 
 Alternatively you can add the framework manually. Remember to link the required frameworks as well.
 
+```
+MobileCoreServices
+SafariServices
+JavascriptCore
+SystemConfiguration
+WebKit
+Security
+CFNetwork
+```
+
 ### KCOCheckoutController
 
 If you are using the Klarna checkout in a webview by loading your checkout url you should instead use a KCOCheckoutController and instantiate it with your current view controller and the webview. The SDK will handle the checkout flow and return signals on certain events. The SDK will keep a weak reference of the view controller, and we will never override the webview delegate, so you can keep using it as normal.
