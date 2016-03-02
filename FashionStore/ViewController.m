@@ -26,14 +26,12 @@
     self.webView.keyboardDisplayRequiresUserAction = NO;
     self.checkout = [[KCOCheckoutController alloc] initWithViewController:self webView:self.webView];
     [self.checkout notifyViewDidLoad];
-    [self loadRequest];
-}
-
-- (void)loadRequest{
+    
     NSURL *url = [NSURL URLWithString:@"http://www.klarnacheckout.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
 }
+
 #pragma mark - Internals
 
 - (void)addObservers
