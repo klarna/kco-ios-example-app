@@ -23,6 +23,7 @@
     [super viewDidLoad];
     
     [self addObservers];
+    self.webView.keyboardDisplayRequiresUserAction = NO;
     self.checkout = [[KCOCheckoutController alloc] initWithViewController:self webView:self.webView];
     [self.checkout notifyViewDidLoad];
     [self loadRequest];
