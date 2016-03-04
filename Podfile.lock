@@ -1,5 +1,5 @@
 PODS:
-  - iOSKlarnaCheckoutSDK (1.0.0)
+  - iOSKlarnaCheckoutSDK (1.1.0)
 
 DEPENDENCIES:
   - iOSKlarnaCheckoutSDK (from `iOSKlarnaCheckoutSDK/`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: iOSKlarnaCheckoutSDK/
 
 SPEC CHECKSUMS:
-  iOSKlarnaCheckoutSDK: dd6a0af8e6fe6afd9b65e99096215e18a3f4af0c
+  iOSKlarnaCheckoutSDK: 994c0f0f8824de8a55128c8737787ade840f867d
 
 COCOAPODS: 0.39.0
