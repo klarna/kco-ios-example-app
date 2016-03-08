@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'iOSKlarnaCheckoutSDK'
-  s.version = '1.1.0'
+  s.version = '1.2.0'
   s.summary = 'A short description of iOS-Klarna-Checkout-SDK.'
   s.license = 'MIT'
   s.authors = {"Johan Rydenstam"=>"johan.rydenstam@klarna.com"}
