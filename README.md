@@ -29,7 +29,8 @@ If you are using the Klarna checkout in a webview by loading your checkout url y
 To set it up you create a KCOCheckoutController
 
 ```objective-c
-self.checkout = [[KCOCheckoutController alloc] initWithViewController:self webView:yourWebView];
+self.checkout = [[KCOCheckoutController alloc] initWithViewController:self];
+[self.checkout attachWebView:self.webview];
 ```
 
 To correctly set up the checkout flow you must notify the controller that the view has loaded - so in your viewDidLoad call notifyViewDidLoad on the checkout controller
@@ -41,6 +42,9 @@ To correctly set up the checkout flow you must notify the controller that the vi
     [self.checkout notifyViewDidLoad];
 }
 ```
+
+If your view has already loaded when you create the checkout, you should call notifyViewDidLoad immediatelly.
+Warning: You should only call this method once!
 
 To handle the signals recieved from the SDK you should set up an observer listeing to the KCOSignalNotification.
 To make sure the checkout shows the succesful screen you need to redirect your webview to the completion url upon recieveing the "complete" message.
@@ -59,7 +63,6 @@ To make sure the checkout shows the succesful screen you need to redirect your w
     }
 }
 
-
 - (void)handleCompletionUri:(NSString *)uri{
     if (uri && [uri isKindOfClass:[NSString class]] && uri.length > 0) {
         NSURL *url = [NSURL URLWithString:uri];
@@ -68,6 +71,18 @@ To make sure the checkout shows the succesful screen you need to redirect your w
 }
 ```
 
+If you want to display the confirmation page in another webview than the one you showed the initial flow in, you must first attach the webview to the checkout.
+Handling the completion uri could look something like this:
+
+```
+- (void)handleCompletionUri:(NSString *)uri{
+    if (uri && [uri isKindOfClass:[NSString class]] && uri.length > 0) {
+        NSURL *url = [NSURL URLWithString:uri];
+        [self.checkout attachWebView:self.confirmationWebView];
+        [self.confirmationWebView loadRequest:[NSURLRequest requestWithURL:url]];
+    }
+}
+```
 
 ### KCOKlarnaCheckout
 
@@ -100,7 +115,7 @@ viewController.internalScrollDisabled = YES;
 viewController.sizingDelegate = self;
 ```
 
-You need to implement these two methds. In the resize event it is up to you how to layout the views, but you need to make sure the view gets the required size. Wether you manually set frames or use autolayout is totally up to you.
+You need to implement these two methods. In the resize event it is up to you how to layout the views, but you need to make sure the view gets the required size. Wether you manually set frames or use autolayout is totally up to you.
 
 ```objective-c
 #pragma mark - KCOEmbeddableCheckoutSizingDelegate
@@ -108,6 +123,7 @@ You need to implement these two methds. In the resize event it is up to you how 
 {
     // return the parent scroll view.
 }
+
 - (void)checkoutViewController:(id)checkout didResize:(CGSize)size
 {
     // Update the size of the checkout view controller to match the new size.
