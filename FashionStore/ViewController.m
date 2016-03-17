@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <iOSKlarnaCheckoutSDK/KCOCheckoutController.h>
-#import <iOSKlarnaCheckoutSDK/KCOConstants.h>
+#import <KlarnaCheckout/KlarnaCheckout.h>
 
 @interface ViewController ()
 
@@ -65,6 +64,5 @@
         [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     }
 }
-
 
 @end
