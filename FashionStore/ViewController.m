@@ -12,7 +12,7 @@
 @interface ViewController ()
 
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
-@property (nonatomic, strong) KCOCheckoutController *checkout;
+@property (nonatomic, strong) KCOKlarnaCheckout *checkout;
 
 @end
 
@@ -24,8 +24,8 @@
     [self addObservers];
     self.title = @"iOS SDK Sample App";
     self.webView.keyboardDisplayRequiresUserAction = NO;
-    self.checkout = [[KCOCheckoutController alloc] initWithViewController:self];
-    [self.checkout attachWebView:self.webView];
+    self.checkout = [[KCOKlarnaCheckout alloc] initWithViewController:self redirectURI:[NSURL URLWithString:@"fashionstore://"]];
+    [self.checkout setWebView:self.webView];
     [self.checkout notifyViewDidLoad];
     
     NSURL *url = [NSURL URLWithString:@"http://www.klarnacheckout.com"];
@@ -48,13 +48,10 @@
 - (void)handleNotification:(NSNotification *)notification
 {
     NSString *name = notification.userInfo[KCOSignalNameKey];
-    NSArray *args = notification.userInfo[KCOSignalArgsKey];
+    NSDictionary *data = notification.userInfo[KCOSignalDataKey];
     
     if ([name isEqualToString:@"complete"]) {
-        NSDictionary *argsDict = [args objectAtIndex:0];
-        if (argsDict && [argsDict isKindOfClass:[NSDictionary class]]) {
-            [self handleCompletionUri:[argsDict objectForKey:@"uri"]];
-        }
+        [self handleCompletionUri:[data objectForKey:@"uri"]];
     }
 }
 
