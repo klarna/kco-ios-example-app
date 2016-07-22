@@ -1,10 +1,10 @@
 PODS:
-  - KlarnaCheckout (1.3.0)
+  - KlarnaCheckout (1.4.0)
 
 DEPENDENCIES:
   - KlarnaCheckout
 
 SPEC CHECKSUMS:
-  KlarnaCheckout: 87a4490a3c4fc54e88a743971be94d50c9da67b9
+  KlarnaCheckout: 2f1cda776871d4b9b969f526030d8688588a3810
 
-COCOAPODS: 0.39.0
+COCOAPODS: 0.38.2
