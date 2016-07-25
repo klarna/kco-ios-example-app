@@ -1,3 +1,6 @@
 platform :ios, '9.0'
 
-pod ‘KlarnaCheckout’
+pod 'KlarnaCheckout'
+
+target 'FashionStore' do
+end
