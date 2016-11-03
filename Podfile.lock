@@ -2,21 +2,11 @@ PODS:
   - KlarnaCheckout (1.5.0)
 
 DEPENDENCIES:
-  - KlarnaCheckout (from `https://github.com/klarna/kco-mobile-sdk.git`, branch `v1.5.0`)
-
-EXTERNAL SOURCES:
-  KlarnaCheckout:
-    :branch: v1.5.0
-    :git: https://github.com/klarna/kco-mobile-sdk.git
-
-CHECKOUT OPTIONS:
-  KlarnaCheckout:
-    :commit: 6a06f71b6688e259a546193163ce1bf15b3f4c7d
-    :git: https://github.com/klarna/kco-mobile-sdk.git
+  - KlarnaCheckout
 
 SPEC CHECKSUMS:
-  KlarnaCheckout: 4ebaa734e013a4464523937bbaa84677496d0faf
+  KlarnaCheckout: 6e3ac15ad6c3f353e8dfa174862199153b548700
 
-PODFILE CHECKSUM: f6a7e8fd4e58d8cbbbc70984083ca38d8fb5c1b8
+PODFILE CHECKSUM: cf2e9f05856bcabcc1c6e7588eed848601201bb9
 
 COCOAPODS: 1.0.1
