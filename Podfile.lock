@@ -1,0 +1,12 @@
+PODS:
+  - KlarnaCheckout (1.5.0)
+
+DEPENDENCIES:
+  - KlarnaCheckout
+
+SPEC CHECKSUMS:
+  KlarnaCheckout: 6e3ac15ad6c3f353e8dfa174862199153b548700
+
+PODFILE CHECKSUM: 7284ab80a27ab0860624e2f342de74b04ba5c512
+
+COCOAPODS: 1.2.0.beta.1
