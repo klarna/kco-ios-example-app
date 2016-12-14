@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KlarnaCheckoutExampleHybrid/KlarnaCheckoutExampleHybrid.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:KlarnaCheckoutExampleEmbedded/KlarnaCheckoutExampleEmbedded.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:KlarnaCheckoutExampleNativeFullscreen.xcodeproj">
    </FileRef>
    <FileRef

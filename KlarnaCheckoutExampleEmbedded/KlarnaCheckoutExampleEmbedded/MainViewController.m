@@ -1,19 +1,19 @@
 //
 //  ViewController.m
-//  KlarnaCheckoutExampleNativeFullscreen
+//  KlarnaCheckoutExampleEmbedded
 //
-//  Created by Andrew Erickson on 2016-12-07.
-//  Copyright © 2016 Klarna. All rights reserved.
+//  Created by Matthew Kiazyk on 2016-12-13.
+//  Copyright © 2016 MattKiazyk. All rights reserved.
 //
 
 #import "MainViewController.h"
 #import "KlarnaCheckout/KlarnaCheckout.h"
 #import "KCOCheckoutInfo.h"
 #import "KCOSnippetLoader.h"
+#import "EmbeddedCheckoutViewController.h"
 
 @interface MainViewController () <KCOSnippetLoaderDelegate>
 
-@property (strong, nonatomic) KCOKlarnaCheckout *checkout;
 @property (strong, nonatomic) KCOCheckoutInfo *checkoutInfo;
 @property (strong, nonatomic) KCOSnippetLoader *snippetLoader;
 
@@ -72,7 +72,7 @@
     [self.view layoutIfNeeded];
     self.checkOutButton.enabled = _checkoutInfo != nil;
     self.checkOutButton.hidden = _checkoutInfo == nil;
-    
+
     self.checkOutButtonHeighConstraint.constant = _checkoutInfo == nil ? 0 : 45;
     [self.checkOutButton setNeedsUpdateConstraints];
 
@@ -82,38 +82,28 @@
     }];
 }
 
-- (void)loadCheckout:(KCOCheckoutInfo *)checkoutInfo {
-    [self.checkout setSnippet:checkoutInfo.snippet];
-    //[self.checkout setSnippet:[self exampleSnippet]];
-}
-
 - (IBAction)checkOut:(id)sender {
 
-    self.checkout = [[KCOKlarnaCheckout alloc] initWithViewController:self redirectURI:[NSURL URLWithString:@"https://google.com"]];
+    EmbeddedCheckoutViewController *embedded = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"EmbeddedView"];
 
-    UIViewController<KCOCheckoutViewControllerProtocol> *standalone = [self.checkout checkoutViewController];
-    standalone.title = @"Checkout";
+    [embedded loadCheckout:_checkoutInfo];
 
-    [standalone setScrollViewContentInset:UIEdgeInsetsMake(0, 0, 49, 0)];
-
-    [self loadCheckout:self.checkoutInfo];
-
-    UINavigationController *popupNav = [[UINavigationController alloc] initWithRootViewController:standalone];
+    UINavigationController *popupNav = [[UINavigationController alloc] initWithRootViewController:embedded];
 
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelCheckout)];
 
-    standalone.navigationItem.leftBarButtonItem = cancelButton;
-    [self.navigationController pushViewController:standalone animated:YES];
+    embedded.navigationItem.leftBarButtonItem = cancelButton;
+
+    [self.navigationController presentViewController:popupNav animated:YES completion:nil];
 }
 
 - (void)cancelCheckout {
     [self dismissViewControllerAnimated:true completion:nil];
 }
 
-#pragma mark - KCOSnippetLoaderDelegate 
+#pragma mark - KCOSnippetLoaderDelegate
 - (void)snippetLoader:(KCOSnippetLoader *)snippetLoader loadedCheckout:(KCOCheckoutInfo *)checkoutInfo {
     self.checkoutInfo = checkoutInfo;
-    [self loadCheckout:checkoutInfo];
 }
 
 - (NSString *)exampleSnippet {

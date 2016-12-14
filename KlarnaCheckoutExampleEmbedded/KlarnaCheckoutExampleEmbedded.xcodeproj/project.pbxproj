@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003047661E0088F700040E6F /* KCOSnippetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 003047651E0088F700040E6F /* KCOSnippetLoader.m */; };
+		003047691E00897500040E6F /* KCOCheckoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 003047681E00897500040E6F /* KCOCheckoutInfo.m */; };
+		0030476C1E008AC300040E6F /* EmbeddedCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0030476B1E008AC300040E6F /* EmbeddedCheckoutViewController.m */; };
+		00CB640F1E005445006C3101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CB640E1E005445006C3101 /* main.m */; };
+		00CB64121E005445006C3101 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CB64111E005445006C3101 /* AppDelegate.m */; };
+		00CB64151E005445006C3101 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CB64141E005445006C3101 /* MainViewController.m */; };
+		00CB64181E005445006C3101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CB64161E005445006C3101 /* Main.storyboard */; };
+		00CB641A1E005445006C3101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CB64191E005445006C3101 /* Assets.xcassets */; };
+		00CB641D1E005445006C3101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CB641B1E005445006C3101 /* LaunchScreen.storyboard */; };
+		23AD124D753F66A712CE5E68 /* Pods_KlarnaCheckoutExampleEmbedded.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C76D99C0C02AD6A22D7C545 /* Pods_KlarnaCheckoutExampleEmbedded.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		003047641E0088F700040E6F /* KCOSnippetLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCOSnippetLoader.h; sourceTree = "<group>"; };
+		003047651E0088F700040E6F /* KCOSnippetLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCOSnippetLoader.m; sourceTree = "<group>"; };
+		003047671E00897500040E6F /* KCOCheckoutInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCOCheckoutInfo.h; sourceTree = "<group>"; };
+		003047681E00897500040E6F /* KCOCheckoutInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCOCheckoutInfo.m; sourceTree = "<group>"; };
+		0030476A1E008AC300040E6F /* EmbeddedCheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmbeddedCheckoutViewController.h; sourceTree = "<group>"; };
+		0030476B1E008AC300040E6F /* EmbeddedCheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmbeddedCheckoutViewController.m; sourceTree = "<group>"; };
+		00CB640A1E005445006C3101 /* KlarnaCheckoutExampleEmbedded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlarnaCheckoutExampleEmbedded.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CB640E1E005445006C3101 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00CB64101E005445006C3101 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00CB64111E005445006C3101 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00CB64131E005445006C3101 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		00CB64141E005445006C3101 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		00CB64171E005445006C3101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00CB64191E005445006C3101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00CB641C1E005445006C3101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00CB641E1E005445006C3101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA1FF6EF39828C9B51087CE /* Pods-KlarnaCheckoutExampleEmbedded.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlarnaCheckoutExampleEmbedded.release.xcconfig"; path = "../Pods/Target Support Files/Pods-KlarnaCheckoutExampleEmbedded/Pods-KlarnaCheckoutExampleEmbedded.release.xcconfig"; sourceTree = "<group>"; };
+		7C76D99C0C02AD6A22D7C545 /* Pods_KlarnaCheckoutExampleEmbedded.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlarnaCheckoutExampleEmbedded.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBDF22CB21D9FD03776F028 /* Pods-KlarnaCheckoutExampleEmbedded.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlarnaCheckoutExampleEmbedded.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-KlarnaCheckoutExampleEmbedded/Pods-KlarnaCheckoutExampleEmbedded.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00CB64071E005445006C3101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23AD124D753F66A712CE5E68 /* Pods_KlarnaCheckoutExampleEmbedded.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00CB64011E005444006C3101 = {
+			isa = PBXGroup;
+			children = (
+				00CB640C1E005445006C3101 /* KlarnaCheckoutExampleEmbedded */,
+				00CB640B1E005445006C3101 /* Products */,
+				EE3DA818F52CBEAD25D183E6 /* Pods */,
+				905D2A7AB2233CBF9C19F4EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00CB640B1E005445006C3101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00CB640A1E005445006C3101 /* KlarnaCheckoutExampleEmbedded.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00CB640C1E005445006C3101 /* KlarnaCheckoutExampleEmbedded */ = {
+			isa = PBXGroup;
+			children = (
+				003047671E00897500040E6F /* KCOCheckoutInfo.h */,
+				003047681E00897500040E6F /* KCOCheckoutInfo.m */,
+				003047641E0088F700040E6F /* KCOSnippetLoader.h */,
+				003047651E0088F700040E6F /* KCOSnippetLoader.m */,
+				00CB64101E005445006C3101 /* AppDelegate.h */,
+				00CB64111E005445006C3101 /* AppDelegate.m */,
+				00CB64131E005445006C3101 /* MainViewController.h */,
+				00CB64141E005445006C3101 /* MainViewController.m */,
+				00CB64161E005445006C3101 /* Main.storyboard */,
+				00CB64191E005445006C3101 /* Assets.xcassets */,
+				00CB641B1E005445006C3101 /* LaunchScreen.storyboard */,
+				00CB641E1E005445006C3101 /* Info.plist */,
+				00CB640D1E005445006C3101 /* Supporting Files */,
+				0030476A1E008AC300040E6F /* EmbeddedCheckoutViewController.h */,
+				0030476B1E008AC300040E6F /* EmbeddedCheckoutViewController.m */,
+			);
+			path = KlarnaCheckoutExampleEmbedded;
+			sourceTree = "<group>";
+		};
+		00CB640D1E005445006C3101 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00CB640E1E005445006C3101 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		905D2A7AB2233CBF9C19F4EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C76D99C0C02AD6A22D7C545 /* Pods_KlarnaCheckoutExampleEmbedded.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE3DA818F52CBEAD25D183E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDF22CB21D9FD03776F028 /* Pods-KlarnaCheckoutExampleEmbedded.debug.xcconfig */,
+				1FA1FF6EF39828C9B51087CE /* Pods-KlarnaCheckoutExampleEmbedded.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00CB64091E005445006C3101 /* KlarnaCheckoutExampleEmbedded */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CB64211E005445006C3101 /* Build configuration list for PBXNativeTarget "KlarnaCheckoutExampleEmbedded" */;
+			buildPhases = (
+				BC283A8C5E91474D8C12E5BF /* [CP] Check Pods Manifest.lock */,
+				00CB64061E005445006C3101 /* Sources */,
+				00CB64071E005445006C3101 /* Frameworks */,
+				00CB64081E005445006C3101 /* Resources */,
+				E8429DD187A0292BA2A95007 /* [CP] Embed Pods Frameworks */,
+				4E3EE8099FC3EB382BD4C599 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KlarnaCheckoutExampleEmbedded;
+			productName = KlarnaCheckoutExampleEmbedded;
+			productReference = 00CB640A1E005445006C3101 /* KlarnaCheckoutExampleEmbedded.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00CB64021E005444006C3101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = MattKiazyk;
+				TargetAttributes = {
+					00CB64091E005445006C3101 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 00CB64051E005444006C3101 /* Build configuration list for PBXProject "KlarnaCheckoutExampleEmbedded" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00CB64011E005444006C3101;
+			productRefGroup = 00CB640B1E005445006C3101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00CB64091E005445006C3101 /* KlarnaCheckoutExampleEmbedded */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00CB64081E005445006C3101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CB641D1E005445006C3101 /* LaunchScreen.storyboard in Resources */,
+				00CB641A1E005445006C3101 /* Assets.xcassets in Resources */,
+				00CB64181E005445006C3101 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E3EE8099FC3EB382BD4C599 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-KlarnaCheckoutExampleEmbedded/Pods-KlarnaCheckoutExampleEmbedded-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC283A8C5E91474D8C12E5BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8429DD187A0292BA2A95007 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-KlarnaCheckoutExampleEmbedded/Pods-KlarnaCheckoutExampleEmbedded-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00CB64061E005445006C3101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				003047691E00897500040E6F /* KCOCheckoutInfo.m in Sources */,
+				003047661E0088F700040E6F /* KCOSnippetLoader.m in Sources */,
+				00CB64151E005445006C3101 /* MainViewController.m in Sources */,
+				00CB64121E005445006C3101 /* AppDelegate.m in Sources */,
+				0030476C1E008AC300040E6F /* EmbeddedCheckoutViewController.m in Sources */,
+				00CB640F1E005445006C3101 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00CB64161E005445006C3101 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00CB64171E005445006C3101 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00CB641B1E005445006C3101 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00CB641C1E005445006C3101 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00CB641F1E005445006C3101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00CB64201E005445006C3101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00CB64221E005445006C3101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEBDF22CB21D9FD03776F028 /* Pods-KlarnaCheckoutExampleEmbedded.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KlarnaCheckoutExampleEmbedded/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattkiazyk.KlarnaCheckoutExampleEmbedded;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00CB64231E005445006C3101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA1FF6EF39828C9B51087CE /* Pods-KlarnaCheckoutExampleEmbedded.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KlarnaCheckoutExampleEmbedded/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattkiazyk.KlarnaCheckoutExampleEmbedded;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00CB64051E005444006C3101 /* Build configuration list for PBXProject "KlarnaCheckoutExampleEmbedded" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CB641F1E005445006C3101 /* Debug */,
+				00CB64201E005445006C3101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CB64211E005445006C3101 /* Build configuration list for PBXNativeTarget "KlarnaCheckoutExampleEmbedded" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CB64221E005445006C3101 /* Debug */,
+				00CB64231E005445006C3101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00CB64021E005444006C3101 /* Project object */;
+}
