@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00CB63F61DF9D3F5006C3101 /* KCOSnippetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CB63F51DF9D3F5006C3101 /* KCOSnippetLoader.m */; };
 		00CB63F91DF9D49F006C3101 /* KCOCheckoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CB63F81DF9D49F006C3101 /* KCOCheckoutInfo.m */; };
-		00CB64001DFA02A3006C3101 /* exampleSnippet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00CB63FF1DFA02A3006C3101 /* exampleSnippet.txt */; };
 		53921F4E1DF8D24D006FD2CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53921F4D1DF8D24D006FD2CE /* main.m */; };
 		53921F511DF8D24D006FD2CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53921F501DF8D24D006FD2CE /* AppDelegate.m */; };
 		53921F541DF8D24D006FD2CE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53921F531DF8D24D006FD2CE /* MainViewController.m */; };
@@ -24,7 +23,6 @@
 		00CB63F51DF9D3F5006C3101 /* KCOSnippetLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCOSnippetLoader.m; sourceTree = "<group>"; };
 		00CB63F71DF9D49F006C3101 /* KCOCheckoutInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCOCheckoutInfo.h; sourceTree = "<group>"; };
 		00CB63F81DF9D49F006C3101 /* KCOCheckoutInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCOCheckoutInfo.m; sourceTree = "<group>"; };
-		00CB63FF1DFA02A3006C3101 /* exampleSnippet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = exampleSnippet.txt; sourceTree = "<group>"; };
 		038D536CD0EC0E449532C21D /* Pods-KlarnaCheckoutExampleNativeFullscreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlarnaCheckoutExampleNativeFullscreen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KlarnaCheckoutExampleNativeFullscreen/Pods-KlarnaCheckoutExampleNativeFullscreen.debug.xcconfig"; sourceTree = "<group>"; };
 		53921F491DF8D24D006FD2CE /* KlarnaCheckoutExampleNativeFullscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlarnaCheckoutExampleNativeFullscreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53921F4D1DF8D24D006FD2CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				53921F4D1DF8D24D006FD2CE /* main.m */,
-				00CB63FF1DFA02A3006C3101 /* exampleSnippet.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 53921F441DF8D24D006FD2CE /* Build configuration list for PBXProject "KlarnaCheckoutExampleNativeFullscreen" */;
+			buildConfigurationList = 53921F441DF8D24D006FD2CE /* Build configuration list for PBXProject "KlarnaCheckoutExampleNativeFullScreen" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -180,7 +177,6 @@
 				53921F5C1DF8D24D006FD2CE /* LaunchScreen.storyboard in Resources */,
 				53921F591DF8D24D006FD2CE /* Assets.xcassets in Resources */,
 				53921F571DF8D24D006FD2CE /* Main.storyboard in Resources */,
-				00CB64001DFA02A3006C3101 /* exampleSnippet.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +382,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53921F441DF8D24D006FD2CE /* Build configuration list for PBXProject "KlarnaCheckoutExampleNativeFullscreen" */ = {
+		53921F441DF8D24D006FD2CE /* Build configuration list for PBXProject "KlarnaCheckoutExampleNativeFullScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53921F5E1DF8D24D006FD2CE /* Debug */,

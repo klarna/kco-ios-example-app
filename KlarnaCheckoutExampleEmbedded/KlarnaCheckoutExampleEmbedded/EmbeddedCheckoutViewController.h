@@ -10,5 +10,5 @@
 @class KCOCheckoutInfo;
 
 @interface EmbeddedCheckoutViewController : UIViewController
-- (void)loadCheckout:(KCOCheckoutInfo *)version;
+- (void)loadCheckoutSnippet:(NSString *)snippet;
 @end

@@ -43,16 +43,15 @@
 
 #pragma mark - Notifications
 
-- (void)addObservers{
+- (void)addObservers {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:KCOSignalNotification object:nil];
 }
 
-- (void)removeObservers{
+- (void)removeObservers {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)handleNotification:(NSNotification *)notification
-{
+- (void)handleNotification:(NSNotification *)notification {
     NSString *name = notification.userInfo[KCOSignalNameKey];
     NSDictionary *data = notification.userInfo[KCOSignalDataKey];
 
@@ -86,7 +85,7 @@
 
     EmbeddedCheckoutViewController *embedded = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"EmbeddedView"];
 
-    [embedded loadCheckout:_checkoutInfo];
+    [embedded loadCheckoutSnippet:_checkoutInfo.snippet];
 
     UINavigationController *popupNav = [[UINavigationController alloc] initWithRootViewController:embedded];
 
@@ -104,11 +103,6 @@
 #pragma mark - KCOSnippetLoaderDelegate
 - (void)snippetLoader:(KCOSnippetLoader *)snippetLoader loadedCheckout:(KCOCheckoutInfo *)checkoutInfo {
     self.checkoutInfo = checkoutInfo;
-}
-
-- (NSString *)exampleSnippet {
-    NSString *txtFilePath = [[NSBundle mainBundle] pathForResource:@"exampleSnippet" ofType:@"txt"];
-    return [NSString stringWithContentsOfFile:txtFilePath encoding:NSUTF8StringEncoding error:NULL];
 }
 
 @end

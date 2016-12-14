@@ -8,12 +8,9 @@
       location = "group:KlarnaCheckoutExampleEmbedded/KlarnaCheckoutExampleEmbedded.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:KlarnaCheckoutExampleNativeFullscreen.xcodeproj">
+      location = "group:KlarnaCheckoutExampleNativeFullScreen.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:KlarnaCheckoutExampleNativeFullScreen.xcodeproj">
    </FileRef>
 </Workspace>

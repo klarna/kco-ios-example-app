@@ -16,11 +16,12 @@
 @property (weak, nonatomic) IBOutlet UIView *checkoutPlaceholderView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
-
-@property (nonatomic, strong) KCOKlarnaCheckout *checkout;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeight;
-@property (nonatomic, strong) UIViewController<KCOCheckoutViewControllerProtocol> *checkoutChildViewController;
-@property (nonatomic, strong) KCOCheckoutInfo *checkoutInfo;
+
+@property (strong, nonatomic) KCOKlarnaCheckout *checkout;
+@property (strong, nonatomic) UIViewController<KCOCheckoutViewControllerProtocol> *checkoutChildViewController;
+@property (strong, nonatomic) NSString *snippet;
+
 @end
 
 @implementation EmbeddedCheckoutViewController
@@ -31,12 +32,12 @@
     [self createCheckout];
 }
 
-- (void)loadCheckout:(KCOCheckoutInfo *)checkoutInfo {
-    self.checkoutInfo = checkoutInfo;
-    [self.checkout setSnippet:checkoutInfo.snippet];
+- (void)loadCheckoutSnippet:(NSString *)snippet {
+    _snippet = snippet;
+    [self.checkout setSnippet:snippet];
 }
 
-- (void)createCheckout{
+- (void)createCheckout {
     self.checkout = [[KCOKlarnaCheckout alloc] initWithViewController:self redirectURI:[NSURL URLWithString:@"example:///"]];
 
     self.checkoutChildViewController = [self.checkout checkoutViewController];
@@ -44,7 +45,7 @@
     self.checkoutChildViewController.internalScrollDisabled = YES;
     self.checkoutChildViewController.parentScrollView = self.scrollView;
     [self addCheckoutChildViewController:self.checkoutChildViewController];
-    [self loadCheckout:self.checkoutInfo]; // reload version
+    [self loadCheckoutSnippet:self.snippet]; // reload version
 }
 
 - (void)loadCompletionSnippet:(NSString *)snippet {
@@ -72,21 +73,9 @@
                                                                         views:views]];
 }
 
-#pragma mark - suspend resume
-
-- (void)suspend {
-    [self.checkoutChildViewController suspend];
-}
-
-- (void)resume {
-    [self.checkoutChildViewController resume];
-}
-
 #pragma mark - KCOEmbeddableCheckoutSizingDelegate
 
-- (void)checkoutViewController:(id)checkout didResize:(CGSize)size
-{
-    NSLog(@"resize - %@", @(size.height));
+- (void)checkoutViewController:(id)checkout didResize:(CGSize)size {
     self.checkoutHeightConstraint.constant = size.height;
     self.contentViewHeight.constant = size.height + 100 +125;
 
@@ -94,7 +83,5 @@
     [self.view updateConstraints];
     [self.view setNeedsLayout];
 }
-
-#pragma mark - Internals
 
 @end

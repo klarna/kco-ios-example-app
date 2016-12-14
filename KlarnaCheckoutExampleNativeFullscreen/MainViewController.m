@@ -43,16 +43,15 @@
 
 #pragma mark - Notifications
 
-- (void)addObservers{
+- (void)addObservers {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNotification:) name:KCOSignalNotification object:nil];
 }
 
-- (void)removeObservers{
+- (void)removeObservers {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (void)handleNotification:(NSNotification *)notification
-{
+- (void)handleNotification:(NSNotification *)notification {
     NSString *name = notification.userInfo[KCOSignalNameKey];
     NSDictionary *data = notification.userInfo[KCOSignalDataKey];
 
@@ -88,7 +87,6 @@
 }
 
 - (IBAction)checkOut:(id)sender {
-
     self.checkout = [[KCOKlarnaCheckout alloc] initWithViewController:self redirectURI:[NSURL URLWithString:@"https://google.com"]];
 
     UIViewController<KCOCheckoutViewControllerProtocol> *standalone = [self.checkout checkoutViewController];
@@ -103,7 +101,7 @@
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelCheckout)];
 
     standalone.navigationItem.leftBarButtonItem = cancelButton;
-    [self.navigationController pushViewController:standalone animated:YES];
+    [self.navigationController pushViewController:popupNav animated:YES];
 }
 
 - (void)cancelCheckout {
@@ -114,11 +112,6 @@
 - (void)snippetLoader:(KCOSnippetLoader *)snippetLoader loadedCheckout:(KCOCheckoutInfo *)checkoutInfo {
     self.checkoutInfo = checkoutInfo;
     [self loadCheckout:checkoutInfo];
-}
-
-- (NSString *)exampleSnippet {
-    NSString *txtFilePath = [[NSBundle mainBundle] pathForResource:@"exampleSnippet" ofType:@"txt"];
-    return [NSString stringWithContentsOfFile:txtFilePath encoding:NSUTF8StringEncoding error:NULL];
 }
 
 @end
