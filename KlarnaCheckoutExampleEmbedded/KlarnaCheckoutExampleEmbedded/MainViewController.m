@@ -29,6 +29,7 @@
     [super viewDidLoad];
 
     [self resetInfo];
+    [self addObservers];
 
     [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.klarnacheckout.com"]]];
 
@@ -37,6 +38,7 @@
 }
 
 - (void)resetInfo {
+    self.snippetLoader.delegate = nil;
     self.snippetLoader = nil;
     self.checkoutInfo = nil;
 }
@@ -59,15 +61,19 @@
     NSLog(@"Args: %@", data);
 
     if ([name isEqualToString:@"complete"]) {
+        // don't let snippet get called again
+        [self resetInfo];
+
         NSString *uri = [data objectForKey:@"uri"];
         NSURL *url = [NSURL URLWithString:uri];
         [self.webview loadRequest:[NSURLRequest requestWithURL:url]];
+
+        // close original popup Checkout Controller
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
-- (void)setCheckoutInfo:(KCOCheckoutInfo *)checkoutInfo {
-    _checkoutInfo = checkoutInfo;
-    NSLog(@"Loaded checkout info: %@", checkoutInfo);
+- (void)showHideCheckoutButton {
     [self.view layoutIfNeeded];
     self.checkOutButton.enabled = _checkoutInfo != nil;
     self.checkOutButton.hidden = _checkoutInfo == nil;
@@ -79,6 +85,11 @@
         [self.checkOutButton updateConstraintsIfNeeded];
         [self.view layoutIfNeeded];
     }];
+}
+
+- (void)setCheckoutInfo:(KCOCheckoutInfo *)checkoutInfo {
+    _checkoutInfo = checkoutInfo;
+    [self showHideCheckoutButton];
 }
 
 - (IBAction)checkOut:(id)sender {
