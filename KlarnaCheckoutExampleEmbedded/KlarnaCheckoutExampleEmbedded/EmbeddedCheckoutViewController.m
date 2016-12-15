@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSectionHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSectionHeightConstraint;
 
 @property (strong, nonatomic) KCOKlarnaCheckout *checkout;
 @property (strong, nonatomic) UIViewController<KCOCheckoutViewControllerProtocol> *checkoutChildViewController;
@@ -77,7 +79,7 @@
 
 - (void)checkoutViewController:(id)checkout didResize:(CGSize)size {
     self.checkoutHeightConstraint.constant = size.height;
-    self.contentViewHeight.constant = size.height + 100 +125;
+    self.contentViewHeight.constant = size.height + self.topSectionHeightConstraint.constant + self.bottomSectionHeightConstraint.constant;
 
     [self.view setNeedsUpdateConstraints];
     [self.view updateConstraints];

@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acW-oU-E46">
-                                <rect key="frame" x="0.0" y="20" width="375" height="602"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="558"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKz-vR-gyI">
@@ -162,11 +162,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomSectionHeightConstraint" destination="ce3-xc-nTk" id="TQt-wY-83v"/>
                         <outlet property="checkoutHeightConstraint" destination="VAf-uM-JBT" id="Mr0-pS-Dm1"/>
                         <outlet property="checkoutPlaceholderView" destination="MEN-fm-Kp6" id="4XV-tu-Ukp"/>
                         <outlet property="contentView" destination="KOE-ax-r91" id="kHj-lo-eOP"/>
                         <outlet property="contentViewHeight" destination="zRH-R0-7vx" id="rAu-09-dCW"/>
                         <outlet property="scrollView" destination="tdw-Wc-DnK" id="wV9-Du-9u2"/>
+                        <outlet property="topSectionHeightConstraint" destination="hAa-1t-vyF" id="g4c-Qi-Y4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wQD-io-7km" userLabel="First Responder" sceneMemberID="firstResponder"/>
