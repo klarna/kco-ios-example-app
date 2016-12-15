@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:KlarnaCheckoutExampleNativeFullscreen.xcodeproj">
+      location = "group:KlarnaCheckoutExampleEmbedded.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

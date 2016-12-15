@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  KlarnaCheckoutExampleNativeFullscreen
+//  KlarnaCheckoutExampleEmbedded
 //
-//  Created by Andrew Erickson on 2016-12-07.
-//  Copyright © 2016 Klarna. All rights reserved.
+//  Created by Matthew Kiazyk on 2016-12-13.
+//  Copyright © 2016 MattKiazyk. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -16,7 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:23.0/255.0 green:187.0/255.0 blue:228/255.0 alpha:1]];

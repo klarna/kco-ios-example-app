@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cFo-dv-Dr2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Tof-Yi-4Nh">
+            <objects>
+                <navigationController id="cFo-dv-Dr2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lgv-bV-Yb9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nsE-qh-Ct3" kind="relationship" relationship="rootViewController" id="cVC-Df-Rdn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jX-H6-KJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1610" y="-177"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="fUg-qD-6I1">
+            <objects>
+                <viewController id="nsE-qh-Ct3" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1A1-Kt-R8V"/>
+                        <viewControllerLayoutGuide type="bottom" id="Si4-ye-FrB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WRo-Pw-BVG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epY-L9-IXm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="602"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYL-ue-DhH">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.73333333329999995" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="JpB-Hu-Nxf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Check Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkOut:" destination="nsE-qh-Ct3" eventType="touchUpInside" id="NzP-7n-6K7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="epY-L9-IXm" secondAttribute="trailing" id="J7V-rx-dm5"/>
+                            <constraint firstItem="NYL-ue-DhH" firstAttribute="top" secondItem="epY-L9-IXm" secondAttribute="bottom" id="Q5R-Nq-nNA"/>
+                            <constraint firstItem="NYL-ue-DhH" firstAttribute="leading" secondItem="WRo-Pw-BVG" secondAttribute="leading" id="Tag-92-8Xi"/>
+                            <constraint firstItem="epY-L9-IXm" firstAttribute="leading" secondItem="WRo-Pw-BVG" secondAttribute="leading" id="m8z-Te-x2v"/>
+                            <constraint firstItem="Si4-ye-FrB" firstAttribute="top" secondItem="NYL-ue-DhH" secondAttribute="bottom" id="scA-Ji-sWJ"/>
+                            <constraint firstItem="epY-L9-IXm" firstAttribute="top" secondItem="1A1-Kt-R8V" secondAttribute="bottom" id="tud-Gh-OmY"/>
+                            <constraint firstAttribute="trailing" secondItem="NYL-ue-DhH" secondAttribute="trailing" id="zE3-WX-4LE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yGh-Op-ke7"/>
+                    <connections>
+                        <outlet property="checkOutButton" destination="NYL-ue-DhH" id="A66-H4-uPU"/>
+                        <outlet property="checkOutButtonHeighConstraint" destination="JpB-Hu-Nxf" id="CPr-Me-PBF"/>
+                        <outlet property="webview" destination="epY-L9-IXm" id="FuI-DB-j5P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsy-uk-V0L" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-318" y="-28"/>
+        </scene>
+    </scenes>
+</document>
