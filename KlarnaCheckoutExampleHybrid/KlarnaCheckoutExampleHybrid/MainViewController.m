@@ -14,7 +14,7 @@
 
 @interface MainViewController () <KCOSnippetLoaderDelegate>
 
-@property (strong, nonatomic) KCOSnippetLoader *snippetLoader;
+@property (strong, nonatomic) KCOSnippetLoader *checkoutInfoLoader;
 @property (strong, nonatomic) KCOCheckoutInfo *checkoutInfo;
 
 @property (weak, nonatomic) IBOutlet UIButton *checkOutButton;
@@ -33,13 +33,13 @@
 
     [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.klarnacheckout.com"]]];
 
-    self.snippetLoader = [[KCOSnippetLoader alloc] initWithWebView:self.webview];
-    self.snippetLoader.delegate = self;
+    self.checkoutInfoLoader = [[KCOSnippetLoader alloc] initWithWebView:self.webview];
+    self.checkoutInfoLoader.delegate = self;
 }
 
 - (void)resetInfo {
-    self.snippetLoader.delegate = nil;
-    self.snippetLoader = nil;
+    self.checkoutInfoLoader.delegate = nil;
+    self.checkoutInfoLoader = nil;
     self.checkoutInfo = nil;
 }
 
