@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53484AFC1E4E544D001BFC6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53484AFB1E4E544D001BFC6E /* AppDelegate.swift */; };
+		53484AFE1E4E544D001BFC6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53484AFD1E4E544D001BFC6E /* ViewController.swift */; };
+		53484B011E4E544D001BFC6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53484AFF1E4E544D001BFC6E /* Main.storyboard */; };
+		53484B031E4E544D001BFC6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53484B021E4E544D001BFC6E /* Assets.xcassets */; };
+		53484B061E4E544D001BFC6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53484B041E4E544D001BFC6E /* LaunchScreen.storyboard */; };
+		53706FB11E4E5504006823BC /* KCOSnippetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53706FB01E4E5503006823BC /* KCOSnippetLoader.swift */; };
+		AE132D96A49C27E6893E5FA1 /* Pods_KlarnaCheckoutExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BF6A2F31BA5A2D298BC917 /* Pods_KlarnaCheckoutExampleSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34B8C18218E91F98D0BBD6BF /* Pods-KlarnaCheckoutExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlarnaCheckoutExampleSwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-KlarnaCheckoutExampleSwift/Pods-KlarnaCheckoutExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		53484AF81E4E544D001BFC6E /* KlarnaCheckoutExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KlarnaCheckoutExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53484AFB1E4E544D001BFC6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53484AFD1E4E544D001BFC6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53484B001E4E544D001BFC6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53484B021E4E544D001BFC6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53484B051E4E544D001BFC6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53484B071E4E544D001BFC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53706FAD1E4E54E3006823BC /* KlarnaCheckoutExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KlarnaCheckoutExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		53706FB01E4E5503006823BC /* KCOSnippetLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCOSnippetLoader.swift; sourceTree = "<group>"; };
+		A9BF6A2F31BA5A2D298BC917 /* Pods_KlarnaCheckoutExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KlarnaCheckoutExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA2382D341348CBD4EE5585 /* Pods-KlarnaCheckoutExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KlarnaCheckoutExampleSwift.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-KlarnaCheckoutExampleSwift/Pods-KlarnaCheckoutExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53484AF51E4E544D001BFC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE132D96A49C27E6893E5FA1 /* Pods_KlarnaCheckoutExampleSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AB6E700E9125590D466AF2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9BF6A2F31BA5A2D298BC917 /* Pods_KlarnaCheckoutExampleSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53484AEF1E4E544D001BFC6E = {
+			isa = PBXGroup;
+			children = (
+				53484AFA1E4E544D001BFC6E /* KlarnaCheckoutExampleSwift */,
+				53484AF91E4E544D001BFC6E /* Products */,
+				A69F70B68A2E55B286DADFEE /* Pods */,
+				2AB6E700E9125590D466AF2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53484AF91E4E544D001BFC6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53484AF81E4E544D001BFC6E /* KlarnaCheckoutExampleSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53484AFA1E4E544D001BFC6E /* KlarnaCheckoutExampleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				53484AFB1E4E544D001BFC6E /* AppDelegate.swift */,
+				53484AFD1E4E544D001BFC6E /* ViewController.swift */,
+				53706FB01E4E5503006823BC /* KCOSnippetLoader.swift */,
+				53484AFF1E4E544D001BFC6E /* Main.storyboard */,
+				53484B021E4E544D001BFC6E /* Assets.xcassets */,
+				53484B041E4E544D001BFC6E /* LaunchScreen.storyboard */,
+				53484B071E4E544D001BFC6E /* Info.plist */,
+				53706FAD1E4E54E3006823BC /* KlarnaCheckoutExampleSwift-Bridging-Header.h */,
+			);
+			path = KlarnaCheckoutExampleSwift;
+			sourceTree = "<group>";
+		};
+		A69F70B68A2E55B286DADFEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA2382D341348CBD4EE5585 /* Pods-KlarnaCheckoutExampleSwift.debug.xcconfig */,
+				34B8C18218E91F98D0BBD6BF /* Pods-KlarnaCheckoutExampleSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53484AF71E4E544D001BFC6E /* KlarnaCheckoutExampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53484B0A1E4E544D001BFC6E /* Build configuration list for PBXNativeTarget "KlarnaCheckoutExampleSwift" */;
+			buildPhases = (
+				4D54972AFCAE6368B39EC1BC /* [CP] Check Pods Manifest.lock */,
+				53484AF41E4E544D001BFC6E /* Sources */,
+				53484AF51E4E544D001BFC6E /* Frameworks */,
+				53484AF61E4E544D001BFC6E /* Resources */,
+				3475F1EC8795F444E7B7301F /* [CP] Embed Pods Frameworks */,
+				39D3F1AB9B02E464641A3244 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KlarnaCheckoutExampleSwift;
+			productName = KlarnaCheckoutExampleSwift;
+			productReference = 53484AF81E4E544D001BFC6E /* KlarnaCheckoutExampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53484AF01E4E544D001BFC6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Klarna;
+				TargetAttributes = {
+					53484AF71E4E544D001BFC6E = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 53484AF31E4E544D001BFC6E /* Build configuration list for PBXProject "KlarnaCheckoutExampleSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53484AEF1E4E544D001BFC6E;
+			productRefGroup = 53484AF91E4E544D001BFC6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53484AF71E4E544D001BFC6E /* KlarnaCheckoutExampleSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53484AF61E4E544D001BFC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53484B061E4E544D001BFC6E /* LaunchScreen.storyboard in Resources */,
+				53484B031E4E544D001BFC6E /* Assets.xcassets in Resources */,
+				53484B011E4E544D001BFC6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3475F1EC8795F444E7B7301F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-KlarnaCheckoutExampleSwift/Pods-KlarnaCheckoutExampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39D3F1AB9B02E464641A3244 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-KlarnaCheckoutExampleSwift/Pods-KlarnaCheckoutExampleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D54972AFCAE6368B39EC1BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53484AF41E4E544D001BFC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53484AFE1E4E544D001BFC6E /* ViewController.swift in Sources */,
+				53484AFC1E4E544D001BFC6E /* AppDelegate.swift in Sources */,
+				53706FB11E4E5504006823BC /* KCOSnippetLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53484AFF1E4E544D001BFC6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53484B001E4E544D001BFC6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53484B041E4E544D001BFC6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53484B051E4E544D001BFC6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53484B081E4E544D001BFC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53484B091E4E544D001BFC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53484B0B1E4E544D001BFC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA2382D341348CBD4EE5585 /* Pods-KlarnaCheckoutExampleSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = KlarnaCheckoutExampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.checkout.example.swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KlarnaCheckoutExampleSwift/KlarnaCheckoutExampleSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		53484B0C1E4E544D001BFC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B8C18218E91F98D0BBD6BF /* Pods-KlarnaCheckoutExampleSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = KlarnaCheckoutExampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.checkout.example.swift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KlarnaCheckoutExampleSwift/KlarnaCheckoutExampleSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53484AF31E4E544D001BFC6E /* Build configuration list for PBXProject "KlarnaCheckoutExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53484B081E4E544D001BFC6E /* Debug */,
+				53484B091E4E544D001BFC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53484B0A1E4E544D001BFC6E /* Build configuration list for PBXNativeTarget "KlarnaCheckoutExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53484B0B1E4E544D001BFC6E /* Debug */,
+				53484B0C1E4E544D001BFC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53484AF01E4E544D001BFC6E /* Project object */;
+}
