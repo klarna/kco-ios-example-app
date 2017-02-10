@@ -22,3 +22,9 @@ target 'KlarnaCheckoutExampleHybrid' do
     project 'KlarnaCheckoutExampleHybrid/KlarnaCheckoutExampleHybrid.xcodeproj'
     pod 'KlarnaCheckout'
 end
+
+target 'KlarnaCheckoutExampleSwift' do
+    use_frameworks!
+    project 'KlarnaCheckoutExampleSwift/KlarnaCheckoutExampleSwift.xcodeproj'
+    pod 'KlarnaCheckout'
+end
