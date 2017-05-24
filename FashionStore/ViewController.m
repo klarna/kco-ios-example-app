@@ -24,7 +24,7 @@
     [self addObservers];
     self.title = @"iOS SDK Sample App";
     self.webView.keyboardDisplayRequiresUserAction = NO;
-    self.checkout = [[KCOKlarnaCheckout alloc] initWithViewController:self redirectURI:[NSURL URLWithString:@"fashionstore://"]];
+    self.checkout = [[KCOKlarnaCheckout alloc] initWithViewController:self returnURL:[NSURL URLWithString:@"fashionstore://"]];
     [self.checkout setWebView:self.webView];
     [self.checkout notifyViewDidLoad];
     
