@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <KlarnaCheckout/KlarnaCheckout.h>
+#import <KlarnaCheckoutSDK/KlarnaCheckout.h>
 
 @interface ViewController ()
 
@@ -20,15 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     [self addObservers];
     self.title = @"iOS SDK Sample App";
     self.webView.keyboardDisplayRequiresUserAction = NO;
     self.checkout = [[KCOKlarnaCheckout alloc] initWithViewController:self redirectURI:[NSURL URLWithString:@"fashionstore://"]];
     [self.checkout setWebView:self.webView];
     [self.checkout notifyViewDidLoad];
-    
-    NSURL *url = [NSURL URLWithString:@"http://www.klarnacheckout.com"];
+
+    NSURL *url = [NSURL URLWithString:@"http://demo.klarna.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
 }
@@ -49,7 +49,7 @@
 {
     NSString *name = notification.userInfo[KCOSignalNameKey];
     NSDictionary *data = notification.userInfo[KCOSignalDataKey];
-    
+
     if ([name isEqualToString:@"complete"]) {
         [self handleCompletionUri:[data objectForKey:@"uri"]];
     }
