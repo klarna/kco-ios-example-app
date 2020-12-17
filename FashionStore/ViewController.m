@@ -27,7 +27,7 @@
     [self.checkout setWebView:self.webView];
     [self.checkout notifyViewDidLoad];
 
-    NSURL *url = [NSURL URLWithString:@"http://www.klarnacheckout.com"];
+    NSURL *url = [NSURL URLWithString:@"https://www.klarna.com/demo/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
 }
