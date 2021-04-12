@@ -10,12 +10,12 @@
 		2DE8C88986A6BAF1DC8E82FF /* libPods-FashionStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A414D05579C7FAA9127E1D /* libPods-FashionStore.a */; };
 		DD69EB241C4F903A0087F7CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB231C4F903A0087F7CF /* main.m */; };
 		DD69EB271C4F903A0087F7CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB261C4F903A0087F7CF /* AppDelegate.m */; };
-		DD69EB2A1C4F903A0087F7CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB291C4F903A0087F7CF /* ViewController.m */; };
 		DD69EB2D1C4F903A0087F7CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD69EB2B1C4F903A0087F7CF /* Main.storyboard */; };
 		DD69EB2F1C4F903A0087F7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD69EB2E1C4F903A0087F7CF /* Assets.xcassets */; };
 		DD69EB321C4F903A0087F7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD69EB301C4F903A0087F7CF /* LaunchScreen.storyboard */; };
 		DD69EB3D1C4F903A0087F7CF /* FashionStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB3C1C4F903A0087F7CF /* FashionStoreTests.m */; };
 		DD69EB481C4F903A0087F7CF /* FashionStoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD69EB471C4F903A0087F7CF /* FashionStoreUITests.m */; };
+		E5D167EB2624535200BEB05E /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D167EA2624535200BEB05E /* BrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,6 @@
 		DD69EB231C4F903A0087F7CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD69EB251C4F903A0087F7CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD69EB261C4F903A0087F7CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD69EB281C4F903A0087F7CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD69EB291C4F903A0087F7CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD69EB2C1C4F903A0087F7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD69EB2E1C4F903A0087F7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD69EB311C4F903A0087F7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		DD69EB431C4F903A0087F7CF /* FashionStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FashionStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD69EB471C4F903A0087F7CF /* FashionStoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FashionStoreUITests.m; sourceTree = "<group>"; };
 		DD69EB491C4F903A0087F7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D167E92624535200BEB05E /* FashionStore-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FashionStore-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5D167EA2624535200BEB05E /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +120,13 @@
 			children = (
 				DD69EB251C4F903A0087F7CF /* AppDelegate.h */,
 				DD69EB261C4F903A0087F7CF /* AppDelegate.m */,
-				DD69EB281C4F903A0087F7CF /* ViewController.h */,
-				DD69EB291C4F903A0087F7CF /* ViewController.m */,
 				DD69EB2B1C4F903A0087F7CF /* Main.storyboard */,
 				DD69EB2E1C4F903A0087F7CF /* Assets.xcassets */,
 				DD69EB301C4F903A0087F7CF /* LaunchScreen.storyboard */,
 				DD69EB331C4F903A0087F7CF /* Info.plist */,
 				DD69EB221C4F903A0087F7CF /* Supporting Files */,
+				E5D167EA2624535200BEB05E /* BrowserViewController.swift */,
+				E5D167E92624535200BEB05E /* FashionStore-Bridging-Header.h */,
 			);
 			path = FashionStore;
 			sourceTree = "<group>";
@@ -177,8 +177,8 @@
 				DD69EB1B1C4F903A0087F7CF /* Sources */,
 				DD69EB1C1C4F903A0087F7CF /* Frameworks */,
 				DD69EB1D1C4F903A0087F7CF /* Resources */,
-				1129490D72A28E08B153A3DA /* [CP] Embed Pods Frameworks */,
 				DAEF05912FCF7D4BCAEB45CA /* [CP] Copy Pods Resources */,
+				44C4B2B7AE3ED4C967801D05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +236,7 @@
 				TargetAttributes = {
 					DD69EB1E1C4F903A0087F7CF = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 1240;
 						ProvisioningStyle = Manual;
 					};
 					DD69EB371C4F903A0087F7CF = {
@@ -253,6 +254,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -296,19 +298,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1129490D72A28E08B153A3DA /* [CP] Embed Pods Frameworks */ = {
+		44C4B2B7AE3ED4C967801D05 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionStore/Pods-FashionStore-frameworks.sh",
+				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KlarnaCheckoutSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionStore/Pods-FashionStore-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionStore/Pods-FashionStore-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		993C04BA08CB5B89D5504029 /* [CP] Check Pods Manifest.lock */ = {
@@ -335,28 +340,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FashionStore/Pods-FashionStore-resources.sh",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/back.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/back@2x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/back@3x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/close.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/close@2x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/close@3x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/forward.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/forward@2x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/forward@3x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/lock.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/lock@2x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle/lock@3x.png",
-				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources/KlarnaCheckoutSDK.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-FashionStore/Pods-FashionStore-resources.sh",
+				"${PODS_ROOT}/KlarnaCheckoutSDK/ios/KlarnaCheckoutSDK.framework/Resources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Resources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FashionStore/Pods-FashionStore-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionStore/Pods-FashionStore-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -366,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD69EB2A1C4F903A0087F7CF /* ViewController.m in Sources */,
+				E5D167EB2624535200BEB05E /* BrowserViewController.swift in Sources */,
 				DD69EB271C4F903A0087F7CF /* AppDelegate.m in Sources */,
 				DD69EB241C4F903A0087F7CF /* main.m in Sources */,
 			);
@@ -513,6 +506,7 @@
 			baseConfigurationReference = CA7BD1D7F093E67BC47D6427 /* Pods-FashionStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -520,6 +514,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.sdk.fashionstore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FashionStore/FashionStore-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -528,6 +525,7 @@
 			baseConfigurationReference = 05E79E6AC706F9A6792FF798 /* Pods-FashionStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -535,12 +533,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.sdk.fashionstore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FashionStore/FashionStore-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		DD69EB501C4F903A0087F7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FashionStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -553,6 +554,7 @@
 		DD69EB511C4F903A0087F7CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FashionStoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -565,6 +567,7 @@
 		DD69EB531C4F903A0087F7CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FashionStoreUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.FashionStoreUITests;
@@ -577,6 +580,7 @@
 		DD69EB541C4F903A0087F7CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FashionStoreUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klarna.FashionStoreUITests;

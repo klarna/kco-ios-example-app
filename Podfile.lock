@@ -1,12 +1,16 @@
 PODS:
-  - KlarnaCheckoutSDK (1.6.0)
+  - KlarnaCheckoutSDK (1.6.15)
 
 DEPENDENCIES:
   - KlarnaCheckoutSDK
 
+SPEC REPOS:
+  trunk:
+    - KlarnaCheckoutSDK
+
 SPEC CHECKSUMS:
-  KlarnaCheckoutSDK: f6a60ee03fd09908427bf6c7f4c33ad46b730cf5
+  KlarnaCheckoutSDK: dbb6031086ba857c64be8c582429518ca4bbd132
 
 PODFILE CHECKSUM: 3f889dab35f91549dec41b566fc44f30324910c6
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.9.3
